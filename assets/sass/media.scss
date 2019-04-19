@@ -1,0 +1,346 @@
+@media (max-width: $max-content-width) {
+  #header {
+    .content {
+      width: 100%;
+      max-width: 100%;
+    }
+    a#logo {
+      left: 15px;
+    }
+    ul#socialMediaMenu {
+      right: 15px;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  #header {
+    ul#menu {
+      width: 710px;
+      margin-left: -355px;
+
+      li {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #brandsPage {
+    .brands-container {
+      img {
+        height: 135px;
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  .content {
+    padding: 30px;
+  }
+  h2 {
+    font-size: 36pt;
+    line-height: 30pt;
+  }
+  #dimOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  #header {
+    a#logo {
+      left: 50%;
+      margin-left: -40px;
+    }
+    ul#socialMediaMenu {
+      right: 20px;
+    }
+    ul#menu {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background-color: $header-bg;
+      margin: 0;
+
+      li,
+      li#aboutAnchor {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 20px 0 20px 30px;
+
+        a {
+          line-height: 24pt;
+          padding: 0 10px;
+          display: block;
+          width: 100%;
+        }
+      }
+      li#storyAnchor {
+        display: none;
+      }
+      li:first-child {
+        margin-left: 10px;
+
+        a {
+          font-size: 24pt;
+        }
+      }
+      li.close {
+        display: block;
+      }
+    }
+    #menuSelection {
+      display: none !important;
+    }
+    #mobileMenuTrigger {
+      display: block;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 9;
+    }
+  }
+
+  #introPage {
+    .content,
+    .learn-more {
+      display: block;
+    }
+    .fullscreen-bg-carousel {
+      display: none;
+    }
+    .dark-overlay.mobile,
+    .fullscreen-bg.mobile {
+      display: block;
+    }
+  }
+
+  #aboutPage {
+    position: relative;
+
+    .halfscreen-bg {
+      position: absolute;
+      width: 100%;
+      height: 64%;
+    }
+    .content {
+      background-color: $about-bg;
+      z-index: 11;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      transform: none;
+      padding: 30px 40px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+      .container.right {
+        width: 100%;
+        float: none;
+      }
+      p {
+        font-size: 9pt;
+        line-height: 16pt;
+        margin: 0;
+      }
+      p:last-child {
+        display: none;
+      }
+    }
+  }
+
+  #lookbookPage {
+    background-color: $lookbook-mobile-bg;
+
+    #lookbookFull {
+      display: none;
+    }
+    #lookbookMobile {
+      display: block;
+    }
+    #lookbookControls {
+      .lookbook-controls-page-left {
+        left: 0;
+      }
+      .lookbook-controls-page-right {
+        right: 0;
+      }
+    }
+  }
+
+  #brandsPage {
+    .content {
+      padding: 30px;
+      p {
+        width: 90%;
+      }
+    }
+    .brands-container {
+      width: 80%;
+
+      img {
+        height: 110px;
+      }
+    }
+  }
+
+  #loungePage {
+    .content {
+      p {
+        width: 90%;
+      }
+      .gallery-controls {
+        display: none;
+      }
+    }
+  }
+
+  #footer {
+    .email-signup {
+      width: 90%;
+    }
+
+    p {
+      width: 70%;
+      margin: 0 auto;
+    }
+    input[type="email"] {
+      width: 58%;
+    }
+    input[type="submit"] {
+      width: 36%;
+    }
+  }
+
+  #navigationIndicator {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  #aboutPage {
+    .halfscreen-bg {
+      background-position: center 16%;
+    }
+  }
+
+  #brandsPage {
+    .brands-container {
+      img {
+        height: 90px;
+      }
+    }
+  }
+
+  #storyPage {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .select-container,
+  textarea,
+  input[type="text"],
+  input[type="submit"] {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #introPage {
+    .content {
+      h1 {
+        img {
+          height: 60px;
+        }
+      }
+      p {
+        font-size: 13pt;
+      }
+    }
+  }
+
+  #consultingPage {
+    h2 {
+      line-height: 42pt;
+    }
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  #lookbookPage {
+    .content {
+      width: 88%;
+    }
+  }
+
+  #consultingPage {
+    padding: 150px 0;
+  }
+
+  #loungePage {
+    padding: 75px 0;
+  }
+
+  #brandsPage {
+    .brands-desktop {
+      display: none;
+    }
+    .brands-mobile {
+      display: block;
+    }
+  }
+
+  #locationPage {
+    min-height: 700px !important;
+
+    #googleMap {
+      height: 40%;
+    }
+
+    .section-overlay {
+      height: 60%;
+
+      .store-info {
+        min-width: 0;
+        width: 100%;
+
+        .contact {
+          margin-bottom: 30px;
+        }
+        .hours-container {
+          max-width: 250px;
+          margin: 0 auto;
+        }
+      }
+      .store-info > * {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  #brandsPage {
+    .brands-container {
+      img {
+        height: 70px;
+      }
+    }
+    .brands-row {
+      margin-bottom: 10px;
+    }
+  }
+  #emailSignupPopup {
+    max-width: 95%;
+    margin-left: 0;
+    left: 2.5%;
+  }
+}

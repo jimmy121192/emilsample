@@ -1,0 +1,30 @@
+#fullpage {
+  .section {
+    min-height: 700px;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  #teamPage.section {
+    min-height: 700px;
+  }
+
+  #careerPage {
+    .content {
+      position: static;
+      transform: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #fullpage {
+    .section {
+      min-height: 530px;
+    }
+  }
+}

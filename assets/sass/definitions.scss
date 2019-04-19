@@ -1,0 +1,99 @@
+/* Fonts */
+$body-font: "Futura-Light-Bt", "Helvetica", sans-serif;
+$header-font: "Palatino", "Times New Roman", serif;
+$primary-text-color: #f5deb3;
+$secondary-text-color: #9a7823;
+$header-text-color: $primary-text-color;
+$body-text-color: $secondary-text-color;
+$contact-text-color: $primary-text-color;
+$about-text-color: $primary-text-color;
+
+$header-font-size: 8.5pt;
+$p-font-size: 1.05em;
+
+$navigation-indicator-dimension: 5px;
+
+/* Sections */
+$header-bg: #202020;
+$default-bg: #222222;
+$about-bg: #444341;
+$brands-bg: #ffffff;
+$story-bg: $default-bg;
+$lookbook-bg: $about-bg;
+$lookbook-mobile-bg: #31302f;
+$lounge-bg: $about-bg;
+$popup-bg: $brands-bg;
+
+$indicator-light: #d6c0a9;
+$indicator-dark: #202020;
+
+/* Contact form */
+$contact-bg: #444341;
+$contact-height: 300px;
+
+/* Footer form */
+$footer-bg: #222222;
+
+$max-content-width: 1080px;
+
+@mixin transition-all($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -ms-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+@mixin transition-background-color($time) {
+  -webkit-transition: background-color $time ease-out;
+  -moz-transition: background-color $time ease-out;
+  -ms-transition: background-color $time ease-out;
+  -o-transition: background-color $time ease-out;
+  transition: background-color $time ease-out;
+}
+@mixin transition-opacity($time) {
+  -webkit-transition: opacity $time ease-out;
+  -moz-transition: opacity $time ease-out;
+  -ms-transition: opacity $time ease-out;
+  -o-transition: opacity $time ease-out;
+  transition: opacity $time ease-out;
+}
+
+@mixin transition-left($time) {
+  -webkit-transition: left $time ease-out;
+  -moz-transition: left $time ease-out;
+  -ms-transition: left $time ease-out;
+  -o-transition: left $time ease-out;
+  transition: left $time ease-out;
+}
+
+@mixin background-cover($url) {
+  background: url($url);
+  background-size: cover;
+  background-position: center center;
+}
+
+@mixin user-select($option) {
+  -moz-user-select: $option;
+  -webkit-user-select: $option;
+  -ms-user-select: $option;
+  user-select: $option;
+}
+
+@keyframes changebottom {
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+i[class^="icon-"] {
+  display: inline-block;
+}
+
+i.icon-arrow {
+  background: url("../images/arrow.svg");
+  height: 12px;
+  width: 33px;
+}
